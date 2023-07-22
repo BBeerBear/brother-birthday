@@ -33,35 +33,35 @@ function App() {
     );
   };
 
-  // const BearModel = () => {
-  //   const gltf = useLoader(GLTFLoader, '/3d_bear/scene.gltf');
-  //   return (
-  //     <primitive
-  //       object={gltf.scene}
-  //       position={[5, -2, 0]}
-  //       rotation={[0, Math.PI / 0.9, 0]}
-  //       scale={0.8}
-  //     />
-  //   );
-  // };
-  // const GiftModel = () => {
-  //   const gltf = useLoader(GLTFLoader, '/3d_gift/scene.gltf');
-  //   return (
-  //     <primitive
-  //       object={gltf.scene}
-  //       // position={[5, -2, 0]}
-  //       rotation={[0, Math.PI / 0.8, 0]}
-  //       scale={2}
-  //     />
-  //   );
-  // };
+  const BearModel = () => {
+    const gltf = useLoader(GLTFLoader, '/3d_bear/scene.gltf');
+    return (
+      <primitive
+        object={gltf.scene}
+        position={[5, -2, 0]}
+        rotation={[0, Math.PI / 0.9, 0]}
+        scale={0.8}
+      />
+    );
+  };
+  const GiftModel = () => {
+    const gltf = useLoader(GLTFLoader, '/3d_gift/scene.gltf');
+    return (
+      <primitive
+        object={gltf.scene}
+        // position={[5, -2, 0]}
+        rotation={[0, Math.PI / 0.8, 0]}
+        scale={2}
+      />
+    );
+  };
 
   return (
     <div className='relative bg-white/25 w-screen h-screen p-2 flex flex-col items-center justify-center gap-5 overflow-hidden'>
       <div className='absolute -bottom-10 w-full'>
         <Fireworks />;
       </div>
-      {/* <div className='absolute top-0 left-0'>
+      <div className='absolute top-0 left-0'>
         <div className='w-52 h-52'>
           <Canvas camera={{ position: [-1, 2, -4], fov: 45 }}>
             <ambientLight />
@@ -94,7 +94,7 @@ function App() {
             <OrbitControls />
           </Canvas>
         </div>
-      </div> */}
+      </div>
       <div className='font-dancing text-6xl tracking-wider text-pink-400 hover:text-7xl duration-1000 z-50 w-fit '>
         Happy Birthday!
       </div>
