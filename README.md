@@ -1,2 +1,2 @@
 # brother-birthday
-ThreeJS + React
+ThreeJS + React + AWS EC2
