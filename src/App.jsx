@@ -1,4 +1,3 @@
-import Firework from 'react-firework';
 import Confetti from 'react-confetti';
 import ReactPlayer from 'react-player/youtube';
 import labicake from './assets/labicake.png';
